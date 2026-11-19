@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <title>{% block title %}Expense Tracker{% endblock %}</title>
+</head>
+<body>
+  <nav class="site-nav"><a href="{{ url_for('web.list_page') }}">Expenses</a> <a href="{{ url_for('web.new_form') }}">Add expense</a></nav>
+  <main class="container">
+  {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Delete expense{% endblock %}
+{% block content %}
+<h1>Delete expense</h1>
+<p>Delete this expense?</p>
+<ul class="detail-list">
+  <li>Amount: {{ expense.amount_display }}</li>
+  <li>Category: {{ expense.category }}</li>
+  <li>Description: {{ expense.description }}</li>
+  <li>Date: {{ expense.expense_date.isoformat() }}</li>
+</ul>
+<form method="post" action="{{ action }}">
+  <div class="actions">
+    <button type="submit" class="btn-danger">Delete</button>
+    <a href="{{ url_for('web.list_page') }}">Cancel</a>
+  </div>
+</form>
+{% endblock %}

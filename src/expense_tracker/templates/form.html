@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ heading }}{% endblock %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<form method="post" action="{{ action }}">
+  <p>
+    <label>Amount <input type="text" name="amount" value="{{ values.amount }}"></label>
+    {% if errors.amount %}<span class="error">{{ errors.amount }}</span>{% endif %}
+  </p>
+  <p>
+    <label>Category
+      <select name="category">
+        <option value="">Select a category</option>
+        {% for c in categories %}<option value="{{ c }}"{% if values.category == c %} selected{% endif %}>{{ c }}</option>{% endfor %}
+      </select>
+    </label>
+    {% if errors.category %}<span class="error">{{ errors.category }}</span>{% endif %}
+  </p>
+  <p>
+    <label>Description <input type="text" name="description" value="{{ values.description }}"></label>
+    {% if errors.description %}<span class="error">{{ errors.description }}</span>{% endif %}
+  </p>
+  <p>
+    <label>Date <input type="date" name="expense_date" value="{{ values.expense_date }}"></label>
+    {% if errors.expense_date %}<span class="error">{{ errors.expense_date }}</span>{% endif %}
+  </p>
+  <div class="actions">
+    <button type="submit">Save</button>
+    <a href="{{ url_for('web.list_page') }}">Cancel</a>
+  </div>
+</form>
+{% endblock %}
