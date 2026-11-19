@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "generatedAt": "2026-11-16T11:07:43.133Z",
+    "rangeLabel": "all",
+    "agents": [
+      "claude"
+    ],
+    "projectFilter": "all",
+    "totals": {
+      "sessions": 1,
+      "durationMs": 77941,
+      "turns": 1,
+      "files": 0,
+      "netLines": 0,
+      "toolCallsTotal": 0,
+      "toolSuccessRate": 0,
+      "totalCostUSD": 0,
+      "cacheReadCostUSD": 0,
+      "pricedSessions": 0
+    },
+    "unpricedModels": [],
+    "estimatedModels": [],
+    "localModels": [],
+    "coverage": [
+      {
+        "agentName": "claude",
+        "total": 1,
+        "priced": 0,
+        "withLog": 1
+      }
+    ],
+    "userEmail": "sagar_chaudhary@epam.com",
+    "periodStart": "2026-11-16T11:05:40.683Z",
+    "periodEnd": "2026-11-16T11:06:58.624Z"
+  },
+  "sessions": [
+    {
+      "sessionId": "0743faf9-af4a-4545-848c-5128cd84052b",
+      "agentName": "claude",
+      "provider": "ai-run-sso",
+      "title": "/start-sdlc",
+      "project": "C:\\Users\\SagarChaudhary\\Documents\\capstones\\expense-tracker-claude",
+      "branch": "main",
+      "startTime": 1794827140683,
+      "durationMs": 77941,
+      "turns": 1,
+      "fileOps": 0,
+      "linesAdded": 0,
+      "linesRemoved": 0,
+      "linesModified": 0,
+      "netLines": 0,
+      "filesChanged": 0,
+      "filesWritten": 0,
+      "filesEdited": 0,
+      "toolCallsTotal": 0,
+      "toolCallsSuccess": 0,
+      "toolCallsFailure": 0,
+      "models": [],
+      "languages": [],
+      "tools": [],
+      "tokens": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheCreation": 0,
+        "cacheCreation1h": 0,
+        "total": 0
+      },
+      "costUSD": 0,
+      "cacheReadCostUSD": 0,
+      "perModelCost": [],
+      "hadLog": true,
+      "agentSessionFile": "C:\\Users\\SagarChaudhary\\.claude\\projects\\C--Users-SagarChaudhary-Documents-capstones-expense-tracker-claude\\d562ccd8-c689-4545-8b75-75125c01fa2e.jsonl",
+      "dispatches": [
+        {
+          "kind": "command",
+          "name": "start-sdlc",
+          "start": 1794827151247,
+          "durationMs": 0,
+          "id": "command:15b879a9-efac-4c40-9836-9faf966648f3:0",
+          "ownerAgentId": "0743faf9-af4a-4545-848c-5128cd84052b",
+          "relationshipStatus": "root",
+          "elapsedMs": 0,
+          "status": "completed",
+          "attributionStatus": "unavailable",
+          "attributionScope": "owner-window"
+        },
+        {
+          "kind": "command",
+          "name": "exit",
+          "start": 1794827217619,
+          "durationMs": 0,
+          "id": "command:4a7b0df6-f969-49c3-8194-9f8806684207:0",
+          "ownerAgentId": "0743faf9-af4a-4545-848c-5128cd84052b",
+          "relationshipStatus": "root",
+          "elapsedMs": 0,
+          "status": "completed",
+          "attributionStatus": "unavailable",
+          "attributionScope": "owner-window"
+        }
+      ],
+      "dispatchesComplete": true,
+      "rootOwnCostUSD": 0,
+      "unlinkedCostUSD": 0,
+      "unlinkedAgentIds": [],
+      "observedEnd": 1794827218624,
+      "rootOwnTokens": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheCreation": 0,
+        "cacheCreation1h": 0,
+        "total": 0
+      },
+      "unlinkedTokens": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheCreation": 0,
+        "cacheCreation1h": 0,
+        "total": 0
+      },
+      "skillInvocations": [],
+      "agentInvocations": [],
+      "commandInvocations": [
+        {
+          "name": "start-sdlc",
+          "totalCalls": 1,
+          "successCount": 1,
+          "failureCount": 0
+        },
+        {
+          "name": "exit",
+          "totalCalls": 1,
+          "successCount": 1,
+          "failureCount": 0
+        }
+      ],
+      "sessionSource": "Pure chat"
+    }
+  ]
+}

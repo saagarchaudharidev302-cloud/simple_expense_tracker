@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "jira": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "mcp-atlassian"
+      ],
+      "env": {
+        "JIRA_URL": "https://jiraeu.epam.com",
+        "JIRA_PERSONAL_TOKEN": "VFnwOLhpo2Q8waTYAOq3w8AGQypr0cQFJ0Wcae",
+        "READ_ONLY_MODE": "true"
+      }
+    }
+  }
+}
